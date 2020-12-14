@@ -46,9 +46,6 @@ namespace InfrastructureTests
                 string.Format(libPattern, $"{_projectNameInterface}.dll"),
                 string.Format(libPattern, $"{_projectNameInterface}.xml"),
 
-                "contentFiles/any/any/settings/gr_settings.xml",
-                "contentFiles/any/any/settings/gr_setting_types.xml",
-
                 "LICENSE.txt",
                 "README.md",
             };
