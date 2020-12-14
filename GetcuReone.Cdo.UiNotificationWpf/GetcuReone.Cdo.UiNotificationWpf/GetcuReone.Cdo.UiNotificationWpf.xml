@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GetcuReone.Cdo.UiNotificationWpf</name>
+    </assembly>
+    <members>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.Entities.Enums.NotificationTypes">
+            <summary>
+            Notification types.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.UiNotificationWpf.Entities.Enums.NotificationTypes.Info">
+            <summary>
+            Info.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.UiNotificationWpf.Entities.Enums.NotificationTypes.Warning">
+            <summary>
+            Warning.
+            </summary>
+        </member>
+        <member name="F:GetcuReone.Cdo.UiNotificationWpf.Entities.Enums.NotificationTypes.Error">
+            <summary>
+            Error.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.Entities.UiNotificationRequest">
+            <summary>
+            Request.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.Entities.UiNotificationRequest.Title">
+            <summary>
+            Notification title.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.Entities.UiNotificationRequest.Message">
+            <summary>
+            Notification message.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.Entities.UiNotificationRequest.Type">
+            <summary>
+            Notification type.
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.IUiNotification">
+            <summary>
+            Informing interface from UI.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.IUiNotification.SendNotificationWindow(GetcuReone.Cdo.UiNotificationWpf.Entities.UiNotificationRequest)">
+            <summary>
+            Send notification at the top of the window.
+            </summary>
+            <param name="request">Request.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase">
+            <summary>
+            Base class for view-model ui notification.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.Request">
+            <summary>
+            Request.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.CloseNotification_ButtonModel">
+            <summary>
+            Button close notification.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.Visibility">
+            <summary>
+            Visibility.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.Title">
+            <summary>
+            Title.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.Message">
+            <summary>
+            Message.
+            </summary>
+        </member>
+        <member name="P:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.Type">
+            <summary>
+            Type.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.Initialize">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.GoBack">
+            <summary>
+            Go back.
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.OnGoPageAsync(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.OnLoadPageAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase.OnLeavePageAsync(GetcuReone.MvvmFrame.Wpf.EventArgs.NavigatingEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationWindow.NotificationWindowPage">
+            <summary>
+            Interaction logic for NotificationWindowPage.xaml
+            </summary>
+            <summary>
+            NotificationWindowPage
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationWindow.NotificationWindowPage.InitializePageComponent``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TViewModel"></typeparam>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationWindow.NotificationWindowPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationWindow.NotificationWindowViewModel">
+            <summary>
+            View-model for <see cref="T:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationWindow.NotificationWindowPage"/>
+            </summary>
+        </member>
+    </members>
+</doc>

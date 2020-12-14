@@ -1,4 +1,4 @@
-﻿using GetcuReone.Cdo.UiNotificationWpf.Entities.Enums;
+﻿using GetcuReone.Cdo.UiNotificationWpf.Entities;
 
 namespace GetcuReone.Cdo.UiNotificationWpf
 {

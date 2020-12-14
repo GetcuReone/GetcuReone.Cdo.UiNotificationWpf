@@ -37,6 +37,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="UI\NotificationWindow\NotificationWindowPage.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.0.0,)" />
         <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.0,)" />
     </ItemGroup>
@@ -52,6 +56,12 @@
             <Pack>True</Pack>
             <PackagePath></PackagePath>
         </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Include="UI\NotificationWindow\NotificationWindowPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
     </ItemGroup>
 
 </Project>
