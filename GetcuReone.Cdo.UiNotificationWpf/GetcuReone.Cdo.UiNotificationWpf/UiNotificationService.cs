@@ -1,4 +1,6 @@
 ﻿using GetcuReone.Cdo.UiNotificationWpf.Entities;
+using GetcuReone.Cdo.UiNotificationWpf.UI.NotificationWindow;
+using GetcuReone.MvvmFrame.Wpf;
 using GetcuReone.MvvmFrame.Wpf.Entities;
 using System.Windows;
 
@@ -9,8 +11,8 @@ namespace GetcuReone.Cdo.UiNotificationWpf
         public void SendNotificationWindow(UiNotificationRequest request)
         {
             VisibleFrame();
-            //var viewModel = ViewModelBase.CreateViewModel<NotificationWindowViewModel>(Frame, uiServices: UiServices);
-            //ViewModelBase.Navigate<NotificationWindowPage>(viewModel, request);
+            var viewModel = ViewModelBase.CreateViewModel<NotificationWindowViewModel>(Frame, uiServices: UiServices);
+            ViewModelBase.Navigate<NotificationWindowPage>(viewModel, request);
         }
 
         public void VisibleFrame()
