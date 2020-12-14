@@ -38,6 +38,7 @@
 
     <ItemGroup>
         <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.0.0,)" />
+        <PackageReference Include="GetcuReone.Cdm.UiElementsWpf" Version="[1.0.0,)" />
     </ItemGroup>
 
     <ItemGroup>
