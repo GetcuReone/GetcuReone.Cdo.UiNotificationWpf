@@ -9,18 +9,26 @@ namespace InfrastructureTests
     public class InfrastructureTests : InfrastructureTestBase
     {
         private DirectoryInfo _solutionFolder;
+        private string _projectNameInterface;
         private string _projectName;
 
         [TestInitialize]
         public override void Initialize()
         {
             _solutionFolder = new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.Parent.Parent;
-            _projectName = "GetcuReone.Cdo.UiNotificationWpf";
+            _projectNameInterface = "GetcuReone.Cdo.UiNotificationWpf";
+            _projectName = "GetcuReone.Cdo.UiNotificationServiceWpf";
 
             BuildConfiguration = Environment.GetEnvironmentVariable("buildConfiguration");
             if (string.IsNullOrEmpty(BuildConfiguration))
                 BuildConfiguration = "Debug";
 
+            TargetFramework = "net472";
+        }
+
+        [TestCleanup]
+        public void CleanUp()
+        {
             TargetFramework = "net472";
         }
 
@@ -30,12 +38,17 @@ namespace InfrastructureTests
         [Timeout(Timeouts.Minute.One)]
         public void NugetHaveNeedFilesTestCase()
         {
-            string nugetId = $"{_projectName}";
+            TargetFramework = "netstandard2.0";
+            string nugetId = $"{_projectNameInterface}";
             string libPattern = $"lib/{TargetFramework}/" + "{0}";
             var files = new string[]
             {
-                string.Format(libPattern, $"{_projectName}.dll"),
-                string.Format(libPattern, $"{_projectName}.xml"),
+                string.Format(libPattern, $"{_projectNameInterface}.dll"),
+                string.Format(libPattern, $"{_projectNameInterface}.xml"),
+
+                "contentFiles/any/any/settings/gr_settings.xml",
+                "contentFiles/any/any/settings/gr_setting_types.xml",
+
                 "LICENSE.txt",
                 "README.md",
             };
@@ -64,7 +77,7 @@ namespace InfrastructureTests
                 "TestsCommon.dll",
             };
 
-            CheckBeginNamespacesInLibrary(_solutionFolder, _projectName, beginNamespace, excludeAssemblies);
+            CheckBeginNamespacesInLibrary(_solutionFolder, _projectNameInterface, beginNamespace, excludeAssemblies);
         }
 
         [TestMethod]
@@ -81,7 +94,7 @@ namespace InfrastructureTests
                 ? $"{majorVersion}.0.0.0"
                 : "1.0.0.0";
 
-            CheckAssembliesVersion(_solutionFolder, _projectName, excpectedAssemblyVersion, includeAssemblies);
+            CheckAssembliesVersion(_solutionFolder, _projectNameInterface, excpectedAssemblyVersion, includeAssemblies);
         }
     }
 }

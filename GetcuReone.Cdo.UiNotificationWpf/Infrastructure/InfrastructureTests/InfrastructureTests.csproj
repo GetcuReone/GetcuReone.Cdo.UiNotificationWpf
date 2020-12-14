@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
+
         <IsPackable>false</IsPackable>
     </PropertyGroup>
 
@@ -21,11 +22,10 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="GetcuReone.GetcuTestAdapter" Version="[1.2.0,)" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\GetcuReone.Cdo.UiNotificationWpf\GetcuReone.Cdo.UiNotificationWpf.csproj" />
+        <ProjectReference Include="..\TestCommon\TestCommon.csproj" />
     </ItemGroup>
 
 </Project>
