@@ -10,14 +10,12 @@ namespace InfrastructureTests
     {
         private DirectoryInfo _solutionFolder;
         private string _projectNameInterface;
-        private string _projectName;
 
         [TestInitialize]
         public override void Initialize()
         {
             _solutionFolder = new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.Parent.Parent;
             _projectNameInterface = "GetcuReone.Cdo.UiNotificationWpf";
-            _projectName = "GetcuReone.Cdo.UiNotificationServiceWpf";
 
             BuildConfiguration = Environment.GetEnvironmentVariable("buildConfiguration");
             if (string.IsNullOrEmpty(BuildConfiguration))
@@ -38,7 +36,6 @@ namespace InfrastructureTests
         [Timeout(Timeouts.Minute.One)]
         public void NugetHaveNeedFilesTestCase()
         {
-            TargetFramework = "netstandard2.0";
             string nugetId = $"{_projectNameInterface}";
             string libPattern = $"lib/{TargetFramework}/" + "{0}";
             var files = new string[]

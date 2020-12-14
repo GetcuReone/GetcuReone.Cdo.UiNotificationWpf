@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
         <RootNamespace>GetcuReone.Cdo.UiNotificationWpf</RootNamespace>
         <DocumentationFile>GetcuReone.Cdo.UiNotificationWpf.xml</DocumentationFile>
 
@@ -35,6 +35,10 @@
         <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
         <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
     </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GetcuReone.Cdi.WpfExtension" Version="[1.0.0,)" />
+    </ItemGroup>
 
     <ItemGroup>
         <None Include="..\..\LICENSE.txt">
