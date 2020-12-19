@@ -9,13 +9,13 @@
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(snkFilePath)</AssemblyOriginatorKeyFile>
         <DelaySign>false</DelaySign>
-        <AssemblyVersion>$(majorVersion).0.0.0</AssemblyVersion>
-        <FileVersion>$(majorVersion).0.0.0</FileVersion>
+        <AssemblyVersion>$(majorVersion).$(minorVersion).0.0</AssemblyVersion>
+        <FileVersion>$(majorVersion).$(minorVersion).0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="GetcuReone.GetcuTestAdapter" Version="[1.3.0,)" />
-        <PackageReference Include="GetcuReone.Cdi" Version="[1.0.0,)" />
+        <PackageReference Include="GetcuReone.Cdi" Version="[1.0.2,)" />
     </ItemGroup>
 
     <ItemGroup>
