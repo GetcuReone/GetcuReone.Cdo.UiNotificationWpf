@@ -33,7 +33,6 @@ namespace GetcuReone.Cdo.UiNotificationWpfTests.UiNotification
             GivenShowEmptyPage()
                 .When("Show notification", viewModel =>
                 {
-                    GetSubFrame();
                     viewModel.UiServices.GetUiService<IUiNotification>()
                         .SendNotificationWindow(new UiNotificationRequest
                         {
