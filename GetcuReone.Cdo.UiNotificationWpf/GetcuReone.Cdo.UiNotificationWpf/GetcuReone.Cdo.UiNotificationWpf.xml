@@ -56,6 +56,18 @@
             <param name="request">Request.</param>
             <returns></returns>
         </member>
+        <member name="T:GetcuReone.Cdo.UiNotificationWpf.UiNotificationSetupHelper">
+            <summary>
+            Installation Notification Instance Assistant
+            </summary>
+        </member>
+        <member name="M:GetcuReone.Cdo.UiNotificationWpf.UiNotificationSetupHelper.SetupUiNitification``1(``0,System.Windows.Controls.Frame)">
+            <summary>
+            Install notification service.
+            </summary>
+            <param name="configUi"></param>
+            <param name="frame">Frame for bind.</param>
+        </member>
         <member name="T:GetcuReone.Cdo.UiNotificationWpf.UI.NotificationVeiwModelBase">
             <summary>
             Base class for view-model ui notification.
